@@ -8,13 +8,17 @@ function App() {
 
   const [todos, setTodos] = useState([]);
 
+  const addTodohandler = (text) => {
+    setTodos([...todos, text]);
+  };
+
   return (
     <div>
       <h1>To-Do App</h1>
-      <TodoForm />
+      <TodoForm addTodo={addTodohandler} />
       <TodoList todos={todos} />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,8 +1,13 @@
-const TodoForm = () => {
+import { useState } from "react";
+
+const TodoForm = ({ addTodo }) => {
+
+    const [text, setText] = useState('')
+
     return (
-        <form>
+        <form onSubmit={() => }>
             <input placeholder="Enter New To-Do Task" />
-            <button type='submit'>Submit</button>
+            <button onClick={addTodo} type='submit'>Submit</button>
         </form>
     );
 };
