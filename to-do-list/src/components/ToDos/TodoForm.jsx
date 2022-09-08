@@ -5,9 +5,18 @@ const TodoForm = ({ addTodo }) => {
     const [text, setText] = useState('')
 
     return (
-        <form onSubmit={() => }>
-            <input placeholder="Enter New To-Do Task" />
-            <button onClick={addTodo} type='submit'>Submit</button>
+        <form
+            onSubmit={(event) => {
+                event.preventDefault();
+                addTodo(text);
+                setText('');
+            }}>
+            <input
+                onChange={(event) => setText(event.target.value)}
+                value={text}
+                placeholder="Enter New To-Do Task"
+            />
+            <button type='submit'>Submit</button>
         </form>
     );
 };
