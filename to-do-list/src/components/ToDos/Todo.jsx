@@ -1,8 +1,6 @@
-const Todo = () => {
+const Todo = ({ todo }) => {
     return (
-        <>  <h1>This Is To-Do List</h1>
-            <h1>This Is To-Do List</h1>
-            <h1>This Is To-Do List</h1>
+        <>  <h1>{todo}</h1>
         </>
 
     );

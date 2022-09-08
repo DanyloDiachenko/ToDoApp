@@ -1,9 +1,9 @@
 import Todo from './Todo';
 
-const TodoList = () => {
+const TodoList = ({ todos }) => {
     return (
         <>
-            <Todo />
+            {todos.map((todo, index) => <Todo key={index} todo={todo} />)}
         </>
     );
 };
