@@ -1,6 +1,22 @@
 input {
-    padding: 12px 50px 12px 0px;
+    padding: 12px 40px 12px 20px;
     border-radius: 10px;
-    font-size: 18px;
+    border: 2px solid #112d49;
     outline: none;
+    transition: 0.4s;
+    text-align: start;
+    font-size: 19px;
+    font-weight: 500;
 }
+
+input:hover {
+    cursor: pointer;
+    box-shadow: -1px 17px 28px -3px rgba(72, 72, 72, 0.75);
+    border: 2px solid gray;
+}
+
+input:focus {
+    border: 2px solid gray;
+    box-shadow: -1px 17px 28px -3px rgba(72, 72, 72, 0.75);
+}
+
