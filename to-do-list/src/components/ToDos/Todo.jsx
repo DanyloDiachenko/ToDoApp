@@ -1,3 +1,5 @@
+import { styles } from './Todo.module.css';
+
 const Todo = ({ todo }) => {
     return (
         <>
