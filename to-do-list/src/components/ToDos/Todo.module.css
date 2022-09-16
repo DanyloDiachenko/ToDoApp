@@ -23,4 +23,11 @@
 .todoText {
     width: 100%;
     text-align: start;
+    margin-left: 15px;
+}
+
+.todoIcon {
+    width: 35px;
+    height: 35px;
+    color: darkgreen;
 }
