@@ -38,8 +38,8 @@
 }
 
 .removeTodo {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     margin-left: 7px;
     transition: color 0.4s;
 }
