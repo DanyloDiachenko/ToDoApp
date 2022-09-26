@@ -1,0 +1,6 @@
+{
+  "short_name": "To-Do App",
+  "name": "Simple To-Do App created on React",
+  "start_url": ".",
+  "display": "standalone"
+}
